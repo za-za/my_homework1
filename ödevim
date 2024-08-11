@@ -1,0 +1,25 @@
+import time
+
+print ("!!!OKUMADAN GEÇMEYİN!!!")
+time.sleep(3)
+print ("NOT: Sözlüğümüzde üst ve alt karakter kullanımı herhangi bir fark OLUŞTURMAMAKTADIR")
+time.sleep(10)
+
+meme_dict = {
+            "CRINGE": "Garip ya da utandırıcı bir şey",
+            "LOL": "Komik bir şeye verilen cevap",
+            "ROFL ": "Bir şakaya cevap" ,
+            "SHEESH":"Onaylamamak",
+            "CREEPY":"Korkunç",
+            "AGGRO":"Agresifleşmek / Sinirlenmek",
+            "GR8":"Harika",
+            }
+            
+while True:
+    word = input("Anlamadığınız bir kelime yazın ")
+    word = word.upper()
+    if word in meme_dict.keys():
+        print(meme_dict[word])
+    else:
+        print ("Bu kelime sözlüğümüzde bulunmamaktadır")
+        print ("Sözlüğümüzde bu kelimeler bulunmaktadır:",meme_dict)
